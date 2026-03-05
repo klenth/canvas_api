@@ -22,7 +22,7 @@ class Course(Model):
         'workflow_state',
         'account_id', 'root_account_id',
         'enrollment_term_id',
-        'grading_periods', 'grading_standard_id', 'grade_passback_settings',
+        'grading_periods', 'grading_standard_id', 'grade_passback_setting',
         *date_fields('created_at', 'start_at', 'end_at'),
         'locale',
         model_list_field('enrollments', Enrollment),

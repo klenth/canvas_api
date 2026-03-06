@@ -4,7 +4,7 @@ from canvas_api.model import *
 
 def get_context():
     credentials = None
-    with open('canvas_credentials.txt', 'r') as f:
+    with open('canvas_credentials.json', 'r') as f:
         credentials = json.load(f)
     return CanvasContext(**credentials)
 
